@@ -1,0 +1,17 @@
+<div class="container">
+    <form>
+        <br>
+        <div class="form-group">
+            <label for="messagecontent"> Input Message:</label>
+            <input type="text" [(ngModel)]="messagecontent" name="messagecontent" id="messagecontent" class="form-control"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <button (click)="chat()" class="btn btn-primary"> Send </button>
+        </div>
+    </form>
+</div>
+
+<ul>
+    <li *ngFor="let m of message">{{m}}</li>
+</ul>
